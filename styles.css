@@ -1,0 +1,98 @@
+* {
+    margin:  0;
+    padding: 0;
+}
+
+.bg-container {
+    padding: 1rem;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-toggle {
+    font-size: 1.5rem;
+    position: fixed;
+    top: 1rem;
+    right: 3rem;
+    cursor: pointer;
+    /* background: transparent; */
+
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    /* width: 400px; */
+}
+
+.logo {
+    height: 40px;
+}
+
+.close-btn {
+    /* height: 40px; */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.links a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+.links a:hover {
+    padding-left: 1.75rem;
+    color: brown;
+}
+
+.social-icons {
+    display: flex;
+    justify-self: center;
+    padding-bottom: 2rem;
+    list-style: none;
+    bottom: 0;
+    position: fixed;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.social-icons a:hover {
+    color: green;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eae6e6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+    .sidebar{
+        width: 400px;
+    }
+}
+
+
